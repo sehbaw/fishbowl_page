@@ -1,0 +1,4 @@
+$().animate({
+    opacity:.5;
+})
+                  
