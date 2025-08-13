@@ -1,3 +1,10 @@
+/* responsive design */
+@media screen and  (min-width:480px) {
+  
+}
+
+
+
 @font-face {
     font-family: "fishbowl";
     src: url("font(s)/fishbowl-font/Fishbowl-21vl.ttf");
@@ -19,6 +26,14 @@ major-container {
     position:absolute;
     top:1;
     left:10;
+    width:400px;
+    height:400px;
+}
+
+.toggle-container {
+    position:absolute;
+    top:1;
+    right:10;
     width:400px;
     height:400px;
 }
@@ -95,35 +110,70 @@ major-container {
     }
 
 .side-poster {
-    margin-left:20px;
-}
-.side-plot-reviews {
-  float:left;
-  width:50%;
-}
-
-
-.float-container {
-    border: 3px solid #fff;
     padding: 20px;
+    overflow: hidden; /* Clearfix */
 }
-.float-child {
-    width: 50%;
+
+.side-plot-reviews {
+    width: 80%;
     float: left;
     padding: 20px;
     border: 2px solid red;
-}  
+    box-sizing: border-box;
+}
+
+
+
+
+
 
 
  
 #review-award-wrapper {
   display: flex;
   text-align:center;
-  
-  
+
 }
 
 .reviews, .awards{
  flex:1;
   width:50%;
+}
+
+
+/* adding a swimming fish */
+
+@keyframes swimForward {
+  100% { background-position: 0 50px;}
+}
+.swimBox {
+    width:27px;
+    height:27px;
+    display:none;
+    background-image:url("fishbowl_page/swimming-fish.png");
+}
+
+.thirdContainer {
+  position:fixed;
+  bottom:0;
+  z-index: 3010;
+}
+
+.youtube-box {
+  width:300px;
+  height:300px;
+  background-repeat: repeat;
+  margin-left:auto;
+  margin-right:auto;
+  display:flex;
+  justify-content: center;
+  padding:10px;
+}
+
+.fish {
+  position:absolute;
+  top:50%;
+  left:0;
+  width:100px;
+  height:auto;
 }
