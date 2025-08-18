@@ -5,6 +5,22 @@
 
 
 
+
+
+.fish {
+  position: absolute;
+  z-index: 1000;
+  pointer-events: none;
+  max-width: 50px;
+  height: auto;
+}
+
+/* Ensure all elements stay within viewport */
+* {
+  box-sizing: border-box;
+}
+
+
 @font-face {
     font-family: "fishbowl";
     src: url("font(s)/fishbowl-font/Fishbowl-21vl.ttf");
@@ -12,6 +28,12 @@
 
 body {
   font-family: "fishbowl";
+  width:100%;
+  height:100%;
+  overflow-x: hidden !important;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -49,6 +71,7 @@ major-container {
   /*  margin:100px 50px 50px 100px; */
     display:flex;
     justify-content:center;
+    gap:10px;
     
 }
 
